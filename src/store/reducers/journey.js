@@ -31,7 +31,7 @@ const reducer = (state = initialState, action) => {
       let findPostQuestionIndex = postQuestions.findIndex((value) => {
         return value.id === action.payload.questionsId;
       });
-      if (findPostQuestionIndex != "-1") {
+      if (findPostQuestionIndex >= 0) {
         postQuestions[findPostQuestionIndex].saveOptionId =
           action.payload.option.id;
       } else {
