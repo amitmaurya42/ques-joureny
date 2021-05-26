@@ -44,7 +44,7 @@ class Question extends Component {
                 )
               }
             />
-            <label for={"question_" + value.id} className="radio-label">
+            <label htmlFor={"question_" + value.id} className="radio-label">
               <div className="card-icon">
                 {this.props.currentQuestion.saveOptionId === value.id ? (
                   <img
